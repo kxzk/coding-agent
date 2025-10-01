@@ -1,4 +1,4 @@
-![cover](./images/workshop-cover.jpg)
+![cover](./images/cover.jpg)
 
 <br>
 
