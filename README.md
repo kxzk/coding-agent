@@ -1,4 +1,4 @@
-# Coding Agent
+![cover](./images/workshop-cover.png)
 
 A minimal Ruby implementation of an agentic chatbot with tool use capabilities.
 
