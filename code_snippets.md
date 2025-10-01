@@ -1,8 +1,8 @@
-# How to Build A Coding Agent - Code Snippets
+### How to Build A Coding Agent - Code Snippets
 
 ---
 
-## Slide 20: Initial Setup
+### Slide 20: Initial Setup
 
 ```bash
 # Install dependencies
@@ -14,7 +14,7 @@ export ANTHROPIC_API_KEY='sk-...'
 
 ---
 
-## Slide 21: Toolset Class - Initialize and Definitions
+### Slide 21: Toolset Class - Initialize and Definitions
 
 ```ruby
 class Toolset
@@ -30,7 +30,7 @@ end
 
 ---
 
-## Slide 22: Toolset Class - Execute Method
+### Slide 22: Toolset Class - Execute Method
 
 ```ruby
 class Toolset
@@ -46,7 +46,7 @@ end
 
 ---
 
-## Slide 26: Read File Tool
+### Slide 26: Read File Tool
 
 ```ruby
 def build_tools
@@ -67,7 +67,7 @@ end
 
 ---
 
-## Slide 27: Write File Tool
+### Slide 27: Write File Tool
 
 ```ruby
 def build_tools
@@ -95,7 +95,7 @@ end
 
 ---
 
-## Slide 28: List Files Tool
+### Slide 28: List Files Tool
 
 ```ruby
 def build_tools
@@ -121,7 +121,7 @@ end
 
 ---
 
-## Slide 29: Bash Tool
+### Slide 29: Bash Tool
 
 ```ruby
 def build_tools
@@ -145,7 +145,7 @@ end
 
 ---
 
-## Slide 31: Agent Class - Initialize
+### Slide 31: Agent Class - Initialize
 
 ```ruby
 class Agent
@@ -159,7 +159,7 @@ end
 
 ---
 
-## Slide 32: Agent Class - Run Method
+### Slide 32: Agent Class - Run Method
 
 ```ruby
 class Agent
@@ -183,7 +183,7 @@ end
 
 ---
 
-## Slide 34: Handle Conversation - Start
+### Slide 34: Handle Conversation - Start
 
 ```ruby
 class Agent
@@ -207,7 +207,7 @@ end
 
 ---
 
-## Slide 35: Display Response and Check for Tools
+### Slide 35: Display Response and Check for Tools
 
 ```ruby
 class Agent
@@ -232,7 +232,7 @@ end
 
 ---
 
-## Slide 36: Execute Tools
+### Slide 36: Execute Tools
 
 ```ruby
 class Agent
@@ -255,7 +255,7 @@ end
 
 ---
 
-## Slide 37: Feed Results Back to Claude
+### Slide 37: Feed Results Back to Claude
 
 ```ruby
 class Agent
@@ -280,7 +280,7 @@ end
 
 ---
 
-## Slide 38: Run the Agent
+### Slide 38: Run the Agent
 
 ```bash
 $ ruby agent.rb
