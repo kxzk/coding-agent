@@ -49,47 +49,13 @@ Handles conversation loop:
 ## Architecture
 
 ```mermaid
-graph TB
-    User[User Input] --> Agent
-
-    Agent --> |"1. Send messages + tools"| API[Anthropic API]
-    API --> |"2. Response (text/tool_use)"| Agent
-
-    Agent --> |"3. Execute tool"| Toolset
-    Toolset --> |"4. Tool result"| Agent
-    Agent --> |"5. Send tool_result"| API
-
-    Agent --> UI[UI Module]
-
-    subgraph "Agent Class"
-        Agent
-        Messages[Message History]
-        Agent -.-> Messages
-    end
-
-    subgraph "Toolset Class"
-        Toolset
-        Tools[read_file<br/>write_file<br/>list_files<br/>bash]
-        Toolset -.-> Tools
-    end
-
-    subgraph "Display"
-        UI
-        Banner[banner]
-        Prompt[prompt]
-        AgentOut[agent output]
-        ToolCall[tool_call]
-        ToolResult[tool_result]
-        UI -.-> Banner
-        UI -.-> Prompt
-        UI -.-> AgentOut
-        UI -.-> ToolCall
-        UI -.-> ToolResult
-    end
-
-    style Agent fill:#e1f5ff
-    style Toolset fill:#fff4e1
-    style UI fill:#f0e1ff
+graph LR
+    User -->|input| Agent
+    Agent -->|messages + tools| API[Anthropic API]
+    API -->|text or tool_use| Agent
+    Agent -->|execute| Toolset
+    Toolset -->|result| Agent
+    Agent -->|tool_result| API
 ```
 
 <br>
